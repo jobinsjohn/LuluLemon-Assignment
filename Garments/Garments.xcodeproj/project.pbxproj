@@ -101,9 +101,10 @@
 		7CDFB86E28B670B400C6BF63 /* Garments */ = {
 			isa = PBXGroup;
 			children = (
+				7CDFB8A428B6723000C6BF63 /* StoryBoards */,
+				7CDFB8A328B6722600C6BF63 /* Controllers */,
 				7CDFB8A228B6713700C6BF63 /* Config */,
 				7CDFB87328B670B400C6BF63 /* ViewController.swift */,
-				7CDFB87528B670B400C6BF63 /* Main.storyboard */,
 				7CDFB87B28B670B600C6BF63 /* Assets.xcassets */,
 				7CDFB87D28B670B600C6BF63 /* LaunchScreen.storyboard */,
 				7CDFB88028B670B600C6BF63 /* Info.plist */,
@@ -136,6 +137,21 @@
 				7CDFB87128B670B400C6BF63 /* SceneDelegate.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		7CDFB8A328B6722600C6BF63 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7CDFB8A428B6723000C6BF63 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				7CDFB87528B670B400C6BF63 /* Main.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
