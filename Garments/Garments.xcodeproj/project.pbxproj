@@ -101,8 +101,7 @@
 		7CDFB86E28B670B400C6BF63 /* Garments */ = {
 			isa = PBXGroup;
 			children = (
-				7CDFB86F28B670B400C6BF63 /* AppDelegate.swift */,
-				7CDFB87128B670B400C6BF63 /* SceneDelegate.swift */,
+				7CDFB8A228B6713700C6BF63 /* Config */,
 				7CDFB87328B670B400C6BF63 /* ViewController.swift */,
 				7CDFB87528B670B400C6BF63 /* Main.storyboard */,
 				7CDFB87B28B670B600C6BF63 /* Assets.xcassets */,
@@ -128,6 +127,15 @@
 				7CDFB89528B670B600C6BF63 /* GarmentsUITestsLaunchTests.swift */,
 			);
 			path = GarmentsUITests;
+			sourceTree = "<group>";
+		};
+		7CDFB8A228B6713700C6BF63 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				7CDFB86F28B670B400C6BF63 /* AppDelegate.swift */,
+				7CDFB87128B670B400C6BF63 /* SceneDelegate.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
