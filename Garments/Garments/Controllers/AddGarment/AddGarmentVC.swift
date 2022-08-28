@@ -49,6 +49,7 @@ class AddGarmentVC: UIViewController {
     }
     
     @IBAction func clearTxtBtnAction(_ sender: Any) {
+        garmentTxtOutlet.text = ""
     }
     
 }
