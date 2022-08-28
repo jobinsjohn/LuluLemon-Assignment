@@ -9,6 +9,15 @@ import UIKit
 
 class AddGarmentVC: UIViewController {
 
+    
+    @IBOutlet weak var dismissViewBtnOutlet: UIButton!
+    
+    @IBOutlet weak var addGarmentBtnOutlet: UIButton!
+    
+    @IBOutlet weak var clearTxtBtnOutlet: UIButton!
+    
+    @IBOutlet weak var garmentTxtOutlet: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +34,16 @@ class AddGarmentVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: - Button Actions
+    
+    @IBAction func dismissViewBtnAction(_ sender: Any) {
+    }
 
+    @IBAction func addGarmentBtnAction(_ sender: Any) {
+    }
+    
+    @IBAction func clearTxtBtnAction(_ sender: Any) {
+    }
+    
 }
