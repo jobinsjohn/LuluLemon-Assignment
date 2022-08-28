@@ -139,11 +139,17 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="152" height="63"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Clear"/>
+                                                                <connections>
+                                                                    <action selector="clearTxtBtnAction:" destination="7qA-LX-nwE" eventType="touchUpInside" id="RwK-49-Np3"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30A-gq-9R2">
                                                                 <rect key="frame" x="242" y="0.0" width="152" height="63"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Add"/>
+                                                                <connections>
+                                                                    <action selector="addGarmentBtnAction:" destination="7qA-LX-nwE" eventType="touchUpInside" id="ffb-Hc-vi7"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -173,6 +179,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                <connections>
+                                    <action selector="dismissViewBtnAction:" destination="7qA-LX-nwE" eventType="touchUpInside" id="AIq-iS-k3O"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MBl-f9-QBJ"/>
@@ -186,6 +195,12 @@
                             <constraint firstItem="MBl-f9-QBJ" firstAttribute="trailing" secondItem="fSU-qV-Dxr" secondAttribute="trailing" constant="8" id="qKN-xa-AL9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addGarmentBtnOutlet" destination="30A-gq-9R2" id="JjX-zG-bmy"/>
+                        <outlet property="clearTxtBtnOutlet" destination="bAK-VO-8cf" id="fVd-L5-8tR"/>
+                        <outlet property="dismissViewBtnOutlet" destination="XSm-C6-K61" id="rrs-7v-Lri"/>
+                        <outlet property="garmentTxtOutlet" destination="ywO-Me-LMC" id="9dD-Q7-zxw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Cu-0u-W5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
