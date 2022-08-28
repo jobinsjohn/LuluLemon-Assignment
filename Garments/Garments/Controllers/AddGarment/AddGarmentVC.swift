@@ -24,6 +24,10 @@ class AddGarmentVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func initUI()
+    {
+        garmentTxtOutlet.delegate = self
+    }
 
     /*
     // MARK: - Navigation
@@ -38,6 +42,7 @@ class AddGarmentVC: UIViewController {
     // MARK: - Button Actions
     
     @IBAction func dismissViewBtnAction(_ sender: Any) {
+        self.dismiss(animated: true)
     }
 
     @IBAction func addGarmentBtnAction(_ sender: Any) {
@@ -46,4 +51,19 @@ class AddGarmentVC: UIViewController {
     @IBAction func clearTxtBtnAction(_ sender: Any) {
     }
     
+}
+
+extension AddGarmentVC: UITextFieldDelegate
+{
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == garmentTxtOutlet {
+                        let allowedCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                        let allowedCharacterSet = CharacterSet(charactersIn: allowedCharacters)
+                        let typedCharacterSet = CharacterSet(charactersIn: string)
+                        let alphabet = allowedCharacterSet.isSuperset(of: typedCharacterSet)
+                        return alphabet
+              } else {
+                return false
+            }
+    }
 }
