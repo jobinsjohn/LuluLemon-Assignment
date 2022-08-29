@@ -54,3 +54,10 @@ class AddGarmentController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
 }
+
+extension AddGarmentController : UITextFieldDelegate{
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+    {
+        
+    }
+
