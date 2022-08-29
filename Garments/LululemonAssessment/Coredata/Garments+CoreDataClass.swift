@@ -2,9 +2,8 @@
 //  Garments+CoreDataClass.swift
 //  LululemonAssessment
 //
-//  Created by Usman on 17/02/21.
-//  Copyright © 2021 Usman. All rights reserved.
 //
+//  Created by Jobins John on 2022-08-24.
 //
 
 import Foundation
