@@ -22,8 +22,8 @@
                                     <constraint firstAttribute="height" constant="40" id="f9w-Lu-CPH"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Alpha"/>
-                                    <segment title="Creation Time"/>
+                                    <segment title="Alphabetical"/>
+                                    <segment title="Date"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentHandler:" destination="BYZ-38-t0r" eventType="valueChanged" id="3ef-qT-Ihc"/>
