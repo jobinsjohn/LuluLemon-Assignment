@@ -15,8 +15,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainTableView.tableFooterView = UIView(frame: CGRect.zero)
+        self.initUi()
         fetchGarments()
+    }
+    
+    // MARK: - View Init Method
+    func initUi()
+    {
+        mainTableView.tableFooterView = UIView(frame: CGRect.zero)
+        
+        if #available(iOS 13.0, *) {
+            segmentControl.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
+            segmentControl.selectedSegmentTintColor = UIColor.blue
+        } else {
+            segmentControl.tintColor = UIColor.blue
+        }
     }
     
     // MARK: - Core Data Fetch
