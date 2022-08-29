@@ -25,6 +25,7 @@
                                     <segment title="Alphabetical"/>
                                     <segment title="Date"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="segmentHandler:" destination="BYZ-38-t0r" eventType="valueChanged" id="3ef-qT-Ihc"/>
                                 </connections>
