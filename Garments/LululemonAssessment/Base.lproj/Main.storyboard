@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List-->
+        <!--Garment List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="LululemonAssessment" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                             <constraint firstItem="WZ9-X0-u5r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wii-zd-MPx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="List" id="JXL-6f-Z0k">
+                    <navigationItem key="navigationItem" title="Garment List" id="JXL-6f-Z0k">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="gjP-g8-eU0">
                             <connections>
                                 <segue destination="G2z-5R-0ON" kind="presentation" id="1zz-6F-hZI"/>
