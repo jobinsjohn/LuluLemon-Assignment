@@ -73,7 +73,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             garmentsCell.textLabel?.text = garmentModel.garmentName
         } else {
             garmentsCell.contentView.backgroundColor = UIColor.lightGray
-            garmentsCell.textLabel?.text = "Please Add Garments..."
+            garmentsCell.textLabel?.text = "No garments added..."
         }
         return garmentsCell
     }
