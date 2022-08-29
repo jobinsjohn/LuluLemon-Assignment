@@ -84,53 +84,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1ef-In-DCJ">
-                                <rect key="frame" x="20" y="76" width="374" height="150"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1ef-In-DCJ">
+                                <rect key="frame" x="20" y="76" width="374" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garment Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzb-uy-AlO">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Please enter garment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7KF-V5-hoi">
-                                        <rect key="frame" x="0.0" y="53.5" width="374" height="43"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter garment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7KF-V5-hoi">
+                                        <rect key="frame" x="0.0" y="35.5" width="374" height="44.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYY-Bf-So7">
-                                        <rect key="frame" x="0.0" y="106.5" width="374" height="43.5"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="PHX-gY-4IG">
-                                                <rect key="frame" x="8" y="0.0" width="358" height="43.5"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNY-qz-bCw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="154" height="43.5"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Clear"/>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE6-u6-IAY">
-                                                        <rect key="frame" x="204" y="0.0" width="154" height="43.5"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Add"/>
-                                                        <connections>
-                                                            <action selector="saveGarmentWith_sender:" destination="feW-kf-4TS" eventType="touchUpInside" id="vF7-LA-k96"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="PHX-gY-4IG" secondAttribute="trailing" constant="8" id="2aG-ow-d2g"/>
-                                            <constraint firstItem="PHX-gY-4IG" firstAttribute="top" secondItem="tYY-Bf-So7" secondAttribute="top" id="6SW-ce-KSR"/>
-                                            <constraint firstItem="PHX-gY-4IG" firstAttribute="leading" secondItem="tYY-Bf-So7" secondAttribute="leading" constant="8" id="a4w-Bq-SlZ"/>
-                                            <constraint firstAttribute="bottom" secondItem="PHX-gY-4IG" secondAttribute="bottom" id="zaW-3W-Hqh"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="t7v-Qe-e9p"/>
+                                    <constraint firstAttribute="height" constant="80" id="t7v-Qe-e9p"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -143,7 +113,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add" id="rTJ-j1-WKR">
-                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="rER-yZ-Yua"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="rER-yZ-Yua">
+                            <connections>
+                                <action selector="saveGarmentWith_sender:" destination="feW-kf-4TS" id="fyq-Ul-mXj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="txtGarment" destination="7KF-V5-hoi" id="Cow-ds-lSx"/>
@@ -162,6 +136,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="hy2-aw-YyW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemCyanColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -195,6 +170,9 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
