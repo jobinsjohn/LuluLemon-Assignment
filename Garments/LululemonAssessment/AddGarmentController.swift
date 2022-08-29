@@ -17,13 +17,14 @@ class AddGarmentController: UIViewController {
     @IBOutlet weak private var txtGarment: UITextField!
     var addGarmentProtocol: AddGarmentProtocol!
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.title = "Add Garment"
         
-
+        super.viewDidLoad()
+        
+        self.title = "Add Garment"
     }
     
     @IBAction func saveGarment(_sender: Any) {
+        
         if let txtGarment = txtGarment.text?.trimmingCharacters(in: .whitespacesAndNewlines) {
             if txtGarment.count == 0 {
                 showAlert()
@@ -42,10 +43,12 @@ class AddGarmentController: UIViewController {
                     print("Failed Saving")
                 }
             }
+        
         }
     }
     
     private func showAlert() {
+        
         let alertController = UIAlertController(title: "Alert", message: "Please enter garment name", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alertController.addAction(alertAction)
